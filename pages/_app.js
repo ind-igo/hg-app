@@ -1,7 +1,18 @@
-import '../styles/globals.css'
+import { ChakraProvider, CSSReset, Box } from '@chakra-ui/react';
+import Head from 'next/head';
+import Navbar from '../components/layout/Navbar';
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+const HgApp = ({ Component, pageProps }) => {
+  return (
+    <ChakraProvider>
+      <CSSReset />
+      <Head>
+        <title>Hieroglyph</title>
+      </Head>
+      <Navbar />
+      <Component {...pageProps} />
+    </ChakraProvider>
+  )
 }
 
-export default MyApp
+export default HgApp;
