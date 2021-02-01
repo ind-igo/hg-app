@@ -3,12 +3,12 @@ import {
   Text,
   Center
 } from '@chakra-ui/react';
-import StandardLayout from '../components/layout/StandardLayout';
+import ColumnarLayout from '../components/layout/ColumnarLayout';
 
 const Index = () => {
   return (
-    <StandardLayout>
-    </StandardLayout>
+    <ColumnarLayout>
+    </ColumnarLayout>
   );
 };
 

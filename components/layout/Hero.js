@@ -1,3 +1,4 @@
+// TODO Goes on landing page
 import {
   Flex
 } from '@chakra-ui/react';

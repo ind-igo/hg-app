@@ -1,6 +1,6 @@
 import { Flex } from '@chakra-ui/react';
 
-const StandardLayout = (props) => {
+const ColumnarLayout = (props) => {
   return (
     <Flex
       direction="column"
@@ -16,4 +16,4 @@ const StandardLayout = (props) => {
   )
 }
 
-export default StandardLayout;
+export default ColumnarLayout;

@@ -1,4 +1,3 @@
-import React from 'react'
 import NextLink from 'next/link';
 import {
   Flex,
@@ -25,16 +24,19 @@ const Navbar = (props) => {
       p={2}
       {...props}
     >
-      <Box>
-        <Heading m={2}>Hieroglyph</Heading>
+      <Box flex="1">
+        <NextLink href='/' passHref>
+          <Heading m={2}>Hieroglyph</Heading>
+        </NextLink>
       </Box>
-      <Box>
+      <Box flex="1">
         <SearchInput />
       </Box>
       <Flex
         direction={["column", "row", "row", "row"]}
         justify={["center", "space-between", "flex-end", "flex-end"]}
         alignItems="stretch"
+        flex="1"
       >
         <NextLink href='/about' passHref>
           <Button variant="solid" size="md" m={2}>
