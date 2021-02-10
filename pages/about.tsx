@@ -2,14 +2,13 @@ import {
   Heading,
   Divider,
   Text,
-  VStack,
   Flex
 } from '@chakra-ui/react';
 import ColumnarLayout from '../components/layout/ColumnarLayout';
 
 const About = () => {
   return (
-    <ColumnarLayout fontSize="xl">
+    <ColumnarLayout>
       <Flex
        direction="column"
        minH="70vh"

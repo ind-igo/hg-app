@@ -1,6 +1,6 @@
 import { Flex } from '@chakra-ui/react';
 
-const ColumnarLayout = (props) => {
+const ColumnarLayout: React.FC = (props) => {
   return (
     <Flex
       direction="column"

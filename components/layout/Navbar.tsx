@@ -2,18 +2,13 @@ import NextLink from 'next/link';
 import {
   Flex,
   Button,
-  Stack,
   Heading,
   Box,
-  InputGroup,
-  InputLeftElement,
-  Input,
-  Spacer
 } from '@chakra-ui/react';
-import { FaTwitter, FaSearch } from 'react-icons/fa';
+import { FaTwitter } from 'react-icons/fa';
 import SearchInput from '../ui/SearchInput';
 
-const Navbar = (props) => {
+const Navbar: React.FC = (props) => {
   return (
     <Flex
       as="nav"
