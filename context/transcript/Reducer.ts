@@ -5,7 +5,7 @@ import {
 
 export const initialState = {
   transcript: '',
-  getTranscript: () => Promise.resolve()
+  getTranscript: (videoId: string) => Promise.resolve()
 }
 
 function Reducer(state: TranscriptStateType, action: any) {

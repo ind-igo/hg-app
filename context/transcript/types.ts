@@ -1,4 +1,3 @@
-export interface TranscriptStateType {
-  transcript: string,
-  getTranscript: (videoId: string) => Promise<void>
-}
+import { initialState } from "./Reducer";
+
+export type TranscriptStateType = typeof initialState;
