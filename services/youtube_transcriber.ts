@@ -23,7 +23,8 @@ export async function getTranscript(videoId_: string) {
     );
     let finalTranscript = punctuated.data as string;
     return Promise.resolve(finalTranscript);
-  } catch(err) {
+  }
+  catch(err) {
     console.log(err);
     return Promise.reject('No Transcript Available.');
   }

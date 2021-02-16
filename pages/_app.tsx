@@ -1,20 +1,22 @@
-import { ChakraProvider, CSSReset } from '@chakra-ui/react';
-import TranscriptState from '../context/transcript/TranscriptState';
 import Head from 'next/head';
 import { AppProps } from 'next/app';
+
+import { ChakraProvider, CSSReset } from '@chakra-ui/react';
+import { TranscriptProvider } from 'contexts/transcript';
+
 import Navbar from '../components/layout/Navbar';
 
 const HgApp = ({ Component, pageProps }: AppProps) => {
   return (
     <ChakraProvider>
-      <TranscriptState>
+      <TranscriptProvider>
         <CSSReset />
         <Head>
           <title>Hieroglyph</title>
         </Head>
         <Navbar />
         <Component {...pageProps} />
-      </TranscriptState>
+      </TranscriptProvider>
     </ChakraProvider>
   )
 }
